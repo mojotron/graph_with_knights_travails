@@ -99,7 +99,7 @@ class Graph
       end
       temp_vertex.color = 'black'
     end 
-    bfs_path(target_vertex)
+    bfs_path(target_vertex) #optional
   end
 
   def depth_first_search(start_vertex, target_vertex)
@@ -110,7 +110,7 @@ class Graph
         dfs_visit(vertex, time)
       end
     end
-    dfs_path(target_vertex, start_vertex)
+    dfs_path(target_vertex, start_vertex) #optional
   end
 
   def dfs_visit(vertex, time)
@@ -153,7 +153,7 @@ class Graph
     path.reverse
   end
 end
-
+=begin
 x = Graph.new()
 x = Graph.new()
 x.add_vertex('S')
@@ -188,3 +188,4 @@ x.add_edge('F', 'C')
 x.add_edge('F', 'C')
 x.print_graph()
 p x.depth_first_search('S','C')
+=end
